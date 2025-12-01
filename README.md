@@ -53,6 +53,8 @@ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build ./
 
 ```shell
 # 自定义端口
+nohup ./jrebel-license-active-server  --port=5555 &
+
 ./license-active-server --port=5555
 # index page show as https
 ./license-active-server --port=5555 --exportSchema=https --exportHost=jrebel.domain.com
